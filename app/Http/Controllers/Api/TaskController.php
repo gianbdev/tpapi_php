@@ -8,6 +8,13 @@ use App\Models\Task;
 use Illuminate\Http\Request;
 use OpenApi\Annotations as OA;
 
+/**
+ * @OA\Tag(
+ *     name="Api",
+ *     description="Operations about tasks"
+ * )
+ */
+
 class TaskController extends Controller
 {
     /**

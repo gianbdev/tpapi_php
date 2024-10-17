@@ -4,8 +4,8 @@
         "title": "Prueba Técnica API",
         "description": "Documentación de la API para la prueba técnica.",
         "contact": {
-            "name": "Tu Nombre",
-            "email": "tuemail@example.com"
+            "name": "Gdev",
+            "email": "giancarlo.silva550@gmail.com"
         },
         "license": {
             "name": "MIT",
@@ -197,5 +197,6 @@
                 "type": "object"
             }
         }
-    }
+    },
+    "tags": []
 }
