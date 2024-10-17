@@ -51,3 +51,5 @@
 ```path
     php artisan serve
 ```
+# Paso 5:
+* Ir a `localhost:8000/api/documentation` para acceder a SwaggerUi
