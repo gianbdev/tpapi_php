@@ -77,7 +77,9 @@ Esta API permite la gestión de tareas, incluyendo la creación, actualización,
   {
       "title": "Título de la tarea",
       "description": "Descripción de la tarea"
-  }```
+      "due_date": "date"
+      "completed": "boolean 1|0"
+  }
 
 ### 3. Obtener Tarea por ID
 - **Método:** `GET`
@@ -91,15 +93,14 @@ Esta API permite la gestión de tareas, incluyendo la creación, actualización,
 - **Endpoint:** `/UpdateTasks/{id}`
 - **Descripción:** Actualiza los detalles de una tarea existente.
 - **Cuerpo de la Solicitud:**
+  * Accede a: `http://localhost:8000/api/UpdateTasks/1`
   ```json
   {
       "title": "Título actualizado",
       "description": "Descripción actualizada"
-  }```
-  * Accede a: `http://localhost:8000/api/UpdateTasks/1`
+      // etc
+  }
 
-
-```markdown
 ### 5. Eliminar Tarea por ID
 - **Método:** `DELETE`
 - **Endpoint:** `/DeleteTasks/{id}`
