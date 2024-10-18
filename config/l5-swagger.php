@@ -1,9 +1,9 @@
 <?php
 
 return [
-    'default' => 'default',
+    'default' => 'task',
     'documentations' => [
-        'default' => [
+        'task' => [
             'api' => [
                 'title' => 'Tasks Enpoints',
             ],

@@ -51,5 +51,59 @@
 ```path
     php artisan serve
 ```
-# Paso 5:
+# Paso 6:
 * Ir a `localhost:8000/api/documentation` para acceder a SwaggerUi
+
+# Documentación de la API de Gestión de Tareas
+
+## Descripción
+Esta API permite la gestión de tareas, incluyendo la creación, actualización, obtención y eliminación de tareas.
+
+## Endpoints
+
+### 1. Obtener Todas las Tareas
+- **Método:** `GET`
+- **Endpoint:** `/GetAllTasks`
+- **Descripción:** Devuelve una lista de todas las tareas.
+- **Ejemplo de Uso:**
+* `localhost:8000/api/GetAllTasks` para ver todas las tareas
+
+### 2. Crear una Nueva Tarea
+- **Método:** `POST`
+- **Endpoint:** `/SaveTasks`
+- **Descripción:** Crea una nueva tarea.
+- **Cuerpo de la Solicitud:**
+  ```json
+  {
+      "title": "Título de la tarea",
+      "description": "Descripción de la tarea"
+  }```
+
+### 3. Obtener Tarea por ID
+- **Método:** `GET`
+- **Endpoint:** `/GetTasks/{id}`
+- **Descripción:** Devuelve los detalles de una tarea específica.
+- **Ejemplo de Uso:**
+  * Accede a: `http://localhost:8000/api/GetTasks/1` para obtener la tarea con ID 1.
+
+### 4. Actualizar Tarea por ID
+- **Método:** `PUT`
+- **Endpoint:** `/UpdateTasks/{id}`
+- **Descripción:** Actualiza los detalles de una tarea existente.
+- **Cuerpo de la Solicitud:**
+  ```json
+  {
+      "title": "Título actualizado",
+      "description": "Descripción actualizada"
+  }```
+  * Accede a: `http://localhost:8000/api/UpdateTasks/1`
+
+
+```markdown
+### 5. Eliminar Tarea por ID
+- **Método:** `DELETE`
+- **Endpoint:** `/DeleteTasks/{id}`
+- **Descripción:** Elimina una tarea específica.
+- **Ejemplo de Uso en Postman:**
+  1. Selecciona `DELETE` como método.
+  2. URL: `http://localhost:8000/api/DeleteTasks/1` (reemplaza `1` con el ID de la tarea que deseas eliminar).
