@@ -38,20 +38,20 @@
     DB_PASSWORD=
 ```
 
-# Paso 5:
+# Paso 6:
 * Ejecutar las migraciones
 
 ```path
     php artisan migrate
 ```
 
-# Paso 5:
+# Paso 7:
 * Ejecutar el api
 
 ```path
     php artisan serve
 ```
-# Paso 6:
+# Paso 8:
 * Ir a `localhost:8000/api/documentation` para acceder a SwaggerUi
 
 # Documentación de la API de Gestión de Tareas
